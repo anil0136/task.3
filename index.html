@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task-1</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function validateForm() {
+          var name = document.forms["form"]["name"].value;
+          var name = document.forms["form"]["email"].value;
+          
+          if (name === "" || email === "") 
+            alert("Name and email are required!");
+            return false;
+          
+        }
+        </script>
+     </head>
+    <body>
+        <div class="fullscreen-div">
+            <div class="class1">
+            WelCome To My Simple Webpage</div>
+            <div class="partition"></div>
+            <div class="main1">
+                <div class="class2"><a href="#">Home</a></div>
+                <div class="class2"><a href="#">About</a></div>
+                <div class="class2"><a href="#">Contact</a></div>
+            </div>
+            <div class="main2">
+                <div class="main3"></div>
+            <div class="main4"><img src="davil10.jpg" alt="RoundImage" class="ri"  ></div>
+            <div class="main5"></div>
+
+            </div>
+            <div class="main6">
+            <div class="main7">
+                <h1>Form</h1>
+                <form name="form"onsubmit="return validateForm()">
+                    <label for="name">Name:</label>
+                    <input type="text"id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email"id="email" name="email"><br><br>
+                    <select id="menu">
+                        <option value="">Select a Course</option>
+                        <option value="1">Web Developement</option>
+                        <option value="2">Data Analytics</option>
+                        <option value="3">Java</option>
+                        <option value="4">Python</option>
+                    </select><br><br>
+                    <input type="Submit" value="Submit">   
+                </form>
+                <br>
+             </div>
+            <div class="main8">
+                <h1 class="c">About Me</h1>
+                <p><h3 class="c1">Hello My name is Anil Kumar Maikap,I am a WebDeveloper.</h3></p>
+                <h1 class="c">Contact Me</h1>
+                 <p><h3 class="c1">Email: anilmaikap0136@gmail.com</h3></p>
+                <p><h3 class="c1">Phone: +91 6372628933</h3></p>
+            </div>
+            </div>
+        </div>
+    <footer><p>&copy; 2024 My simple Webpage.All rights reserved.</footer>
+    </body>
+</html>
